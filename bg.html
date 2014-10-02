@@ -1,12 +1,22 @@
 <!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" href="less/compiled.css"/>
+		<link rel="stylesheet" href="less/bg.css"/>
 	</head>
 	<body>
 		<div class="fullsize background">
-
+			<div class="content-top">
+				<div class="content">
+					<h1>Hi.</h1>
+				</div>
+			</div>
+			<div class="img-stripe"></div>
 		</div>
 		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script>
+		$(function () {
+			$(".content-top").animate({"height": "50%"}, 3000);
+		});
+		</script>
 	</body>
 </html>
