@@ -1,5 +1,6 @@
 @import "base";
 @bg-color: #fff;
+@stripe-height: 5%;
 
 .img-accent {
 	background: #fff url("../img/mountain.jpg") no-repeat;
@@ -14,11 +15,11 @@
 .img-stripe {
 	.img-accent();
 	width: 100%;
-	height: 32px;
+	height: @stripe-height;
 }
 
-.content-top {
-	height: 100%;
+.container-top {
+	height: 100% - @stripe-height;
 	transition: 3s;
 	vertical-align: baseline;
 	position: relative;
@@ -29,4 +30,19 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
+}
+
+.img-button {
+	border: 0;
+	margin: 0;
+	box-shadow: 0;
+	.img-accent();
+	.btn();
+}
+
+.cover-btns {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	padding: 16px 32px;
 }

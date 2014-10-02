@@ -2,6 +2,12 @@ body, html {
 	.fullsize;
 	padding: 0;
 	position: relative;
+	font-family: "Segoe Light" "Helvetica Neue" "Helvetica" Arial sans-serif;
+}
+
+h1, h2, h3, h4, h5, span, p {
+	font-family: inherit;
+	margin: 0;
 }
 
 .fullsize {
@@ -18,4 +24,24 @@ body, html {
 	position: relative;
 	top: 50%;
 	transform: translate(0, -50%);
+}
+
+.transition(@duration) {
+	transition: @duration;
+	-webkit-transition: @duration;
+	-moz-transition: @duration;
+	-ms-transition: @duration;
+}
+
+.btn {
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	
+	cursor: pointer;
+	
+	&:hover {
+		opacity: 0.5;
+	}
 }
