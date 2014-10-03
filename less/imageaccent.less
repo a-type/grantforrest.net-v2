@@ -1,0 +1,49 @@
+.img-accent {
+	background: #fff url("../img/mountain.jpg") no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.img-text {
+	color: #323232;
+	.img-accent();
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.img-button {
+	border: 0;
+	margin: 0;
+	box-shadow: 0;
+	.img-accent();
+	.btn();
+	padding: 4px;
+	
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.img-button-interior {
+	.transition(@duration: 0.2s);
+	background: white;
+	font-weight: bold;
+	padding: 8px 16px;
+	
+	span {
+		.img-text();
+		
+		&:hover {
+			background: none;
+		}
+	}
+	
+	&:hover {
+		background: transparent;
+		color: white;
+		
+		span {
+			-webkit-text-fill-color: white;
+		}
+	}
+}

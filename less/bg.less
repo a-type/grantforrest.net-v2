@@ -1,15 +1,26 @@
 @import "base";
-@bg-color: #fff;
-@stripe-height: 5%;
+@import "imageaccent";
 
-.img-accent {
-	background: #fff url("../img/mountain.jpg") no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+/* Variables */
+@bg-color: #fff;
+@stripe-height: 2%;
+@top-margin: 2%;
+
+/* Animations */
+.collapse-top-mixin() {
+	from { height: 100%; }
+	to { height: @top-margin; }
 }
+
+@-webkit-keyframes collapse-top { .collapse-top-mixin }
+@-moz-keyframes collapse-top { .collapse-top-mixin }
+@-ms-keyframes collapse-top { .collapse-top-mixin }
+@-o-keyframes collapse-top { .collapse-top-mixin }
+@keyframes collapse-top { .collapse-top-mixin }
 
 .background {
 	background: @bg-color;
+	height: 100%;
 }
 
 .img-stripe {
@@ -18,31 +29,44 @@
 	height: @stripe-height;
 }
 
+.title {
+	position: absolute;
+	top: 0;
+	left: 20px;
+	font-size: 80px;
+	.img-text();
+}
+
 .container-top {
-	height: 100% - @stripe-height;
+	height: 100% - @stripe-height - @top-margin;
 	transition: 3s;
 	vertical-align: baseline;
 	position: relative;
+	animation: collapse-top 2.5s ease;
+	-webkit-animation: collapse-top 2.5s ease;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
 }
 
-.content {
+.container-bottom {
+	position: relative;
+}
+
+.header {
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	left: 0;
 	right: 0;
 }
 
-.img-button {
-	border: 0;
-	margin: 0;
-	box-shadow: 0;
-	.img-accent();
-	.btn();
-}
-
 .cover-btns {
 	position: absolute;
-	right: 0px;
-	bottom: 0px;
+	right: 0;
+	top: 0;
 	padding: 16px 32px;
+}
+
+.content {
+	position: relative;
+	top: 120px;
 }
