@@ -1,13 +1,24 @@
+@foreground: white;
+
+div, p, img, h1, h2, h3, h4, h5, span, textarea,
+button, a, form, input, select, section {
+	box-sizing: border-box !important;
+}
+
 body, html {
 	.fullsize;
 	padding: 0;
 	position: relative;
-	font-family: Helvetica, Segoe UI, Arial, Sans-Serif;
+	font: Helvetica, Segoe UI, Arial, Sans-Serif;
 }
 
 h1, h2, h3, h4, h5, span, p {
-	font-family: inherit;
+	font: inherit;
 	margin: 0;
+}
+
+.foreground {
+	background: @foreground;
 }
 
 .fullsize {

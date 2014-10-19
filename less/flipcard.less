@@ -1,5 +1,4 @@
 @import "base";
-@import "imageaccent";
 
 /* animations */
 
@@ -23,7 +22,7 @@
 		.transform3d(@details: rotateX(180deg));
 	}
 	from {
-		.transform3d(@details: rotateX(0deg));
+		.transform3d(@details: rotateX(360deg));
 	}
 }
 
@@ -33,38 +32,56 @@
 @-ms-keyframes flip-to-back { .flip-to-back-mixin }
 @-o-keyframes flip-to-back { .flip-to-back-mixin }
 
+.flip-to-back-animation(@direction) {
+	-webkit-animation: flip-to-back 0.5s;
+	animation: flip-to-back 0.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-direction: @direction;
+	webkit-animation-direction: @direction;
+}
+
+.flip-to-front-animation(@direction) {
+	-webkit-animation: flip-to-front 0.5s;
+	animation: flip-to-front 0.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-direction: @direction;
+	webkit-animation-direction: @direction;
+}
+
 .flip-card {
 	.perspective(800px);
 	position: relative;
-	min-height: 120px;
-	width: 30%;
 }
 
 .flip-card-back {
 	.transform3d(@details: rotateX(180deg));
-	background: grey;
 	backface-visibility: hidden;
 	.fullsize-absolute();
 }
 
 .flip-card-front {
-	.img-accent;
 	backface-visibility: hidden;
 	.fullsize-absolute();
 }
 
 .flipped {
 	.flip-card-back {
-		-webkit-animation: flip-to-front 0.5s;
-		animation: flip-to-front 0.5s;
-		animation-fill-mode: forwards;
-		-webkit-animation-fill-mode: forwards;
+		.flip-to-front-animation(@direction: normal);
 	}
 	
 	.flip-card-front {
-		-webkit-animation: flip-to-back 0.5s;
-		animation: flip-to-back 0.5s;
-		animation-fill-mode: forwards;
-		-webkit-animation-fill-mode: forwards;
+		.flip-to-back-animation(@direction: normal);
+	}
+}
+
+.unflipped {
+	.flip-card-back {
+		.flip-to-back-animation(@direction: reverse);
+	}
+	
+	.flip-card-front {
+		.flip-to-front-animation(@direction: reverse);
 	}
 }

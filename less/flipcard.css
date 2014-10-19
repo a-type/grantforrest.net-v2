@@ -1,3 +1,21 @@
+div,
+p,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+textarea,
+button,
+a,
+form,
+input,
+select,
+section {
+  box-sizing: border-box !important;
+}
 body,
 html {
   width: 100%;
@@ -5,7 +23,7 @@ html {
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: Helvetica, Segoe UI, Arial, Sans-Serif;
+  font: Helvetica, Segoe UI, Arial, Sans-Serif;
 }
 h1,
 h2,
@@ -14,8 +32,11 @@ h4,
 h5,
 span,
 p {
-  font-family: inherit;
+  font: inherit;
   margin: 0;
+}
+.foreground {
+  background: #ffffff;
 }
 .fullsize {
   width: 100%;
@@ -46,67 +67,6 @@ p {
 }
 .btn:hover {
   opacity: 0.5;
-}
-.img-accent {
-  background: #ffffff url("../img/mountain.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.img-text {
-  color: #323232;
-  background: #ffffff url("../img/mountain.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.img-button {
-  border: 0;
-  margin: 0;
-  box-shadow: 0;
-  background: #ffffff url("../img/mountain.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  cursor: pointer;
-  padding: 4px;
-}
-.img-button:hover {
-  opacity: 0.5;
-}
-.img-button:hover {
-  opacity: 1;
-}
-.img-button-interior {
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-  background: white;
-  font-weight: bold;
-  padding: 8px 16px;
-}
-.img-button-interior span {
-  color: #323232;
-  background: #ffffff url("../img/mountain.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.img-button-interior span:hover {
-  background: none;
-}
-.img-button-interior:hover {
-  background: transparent;
-  color: white;
-}
-.img-button-interior:hover span {
-  -webkit-text-fill-color: white;
 }
 /* animations */
 .flip-to-front-mixin to {
@@ -224,11 +184,11 @@ p {
   transform-style: preserve-3d;
 }
 .flip-to-back-mixin from {
-  transform: rotateX(0deg);
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  -o-transform: rotateX(0deg);
+  transform: rotateX(360deg);
+  -webkit-transform: rotateX(360deg);
+  -moz-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  -o-transform: rotateX(360deg);
   transform-style: preserve-3d;
 }
 @keyframes flip-to-back {
@@ -241,11 +201,11 @@ p {
     transform-style: preserve-3d;
   }
   from {
-    transform: rotateX(0deg);
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
+    transform: rotateX(360deg);
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
     transform-style: preserve-3d;
   }
 }
@@ -259,11 +219,11 @@ p {
     transform-style: preserve-3d;
   }
   from {
-    transform: rotateX(0deg);
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
+    transform: rotateX(360deg);
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
     transform-style: preserve-3d;
   }
 }
@@ -277,11 +237,11 @@ p {
     transform-style: preserve-3d;
   }
   from {
-    transform: rotateX(0deg);
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
+    transform: rotateX(360deg);
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
     transform-style: preserve-3d;
   }
 }
@@ -295,11 +255,11 @@ p {
     transform-style: preserve-3d;
   }
   from {
-    transform: rotateX(0deg);
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
+    transform: rotateX(360deg);
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
     transform-style: preserve-3d;
   }
 }
@@ -313,11 +273,11 @@ p {
     transform-style: preserve-3d;
   }
   from {
-    transform: rotateX(0deg);
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
+    transform: rotateX(360deg);
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
     transform-style: preserve-3d;
   }
 }
@@ -328,8 +288,6 @@ p {
   -ms-perspective: 800px;
   -o-perspective: 800px;
   position: relative;
-  min-height: 120px;
-  width: 30%;
 }
 .flip-card-back {
   transform: rotateX(180deg);
@@ -338,7 +296,6 @@ p {
   -ms-transform: rotateX(180deg);
   -o-transform: rotateX(180deg);
   transform-style: preserve-3d;
-  background: grey;
   backface-visibility: hidden;
   position: absolute;
   top: 0;
@@ -347,9 +304,6 @@ p {
   right: 0;
 }
 .flip-card-front {
-  background: #ffffff url("../img/mountain.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   backface-visibility: hidden;
   position: absolute;
   top: 0;
@@ -362,11 +316,31 @@ p {
   animation: flip-to-front 0.5s;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
+  animation-direction: normal;
+  webkit-animation-direction: normal;
 }
 .flipped .flip-card-front {
   -webkit-animation: flip-to-back 0.5s;
   animation: flip-to-back 0.5s;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
+  animation-direction: normal;
+  webkit-animation-direction: normal;
+}
+.unflipped .flip-card-back {
+  -webkit-animation: flip-to-back 0.5s;
+  animation: flip-to-back 0.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-direction: reverse;
+  webkit-animation-direction: reverse;
+}
+.unflipped .flip-card-front {
+  -webkit-animation: flip-to-front 0.5s;
+  animation: flip-to-front 0.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-direction: reverse;
+  webkit-animation-direction: reverse;
 }
 /*# sourceMappingURL=flipcard.css.map */

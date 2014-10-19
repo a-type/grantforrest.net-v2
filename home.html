@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="vendor/uikit-2.11.0/css/uikit.min.css"/>
+		<link rel="stylesheet" href="less/home.css"/>
+		<link rel="stylesheet" href="less/flipcard.css"/>
+		<script src="vendor/modernizr/modernizr-latest.js"></script>
+		<script>
+			Modernizr.addTest('backgroundclip',function() {
+
+		    var div = document.createElement('div');
+
+		    if ('backgroundClip' in div.style)
+		      return true;
+
+		    'Webkit Moz O ms Khtml'.replace(/([A-Za-z]*)/g,function(val) { 
+		      if (val+'BackgroundClip' in div.style) return true;
+		    });
+
+		  });
+		</script>
+	</head>
+	<body>
+		<div class="fullsize background">
+			<div class="container-top"></div>
+			<div class="img-stripe"></div>
+			<div class="container-bottom">
+				<div class="header">
+					<div class="cover-btns">
+						<button class="img-button">
+							<div class="img-button-interior">
+								<span>Info</span>
+							</div>
+						</button>
+						<button class="img-button">
+							<div class="img-button-interior">
+								<span>Dev</span>
+							</div>
+						</button>
+						<button class="img-button">
+							<div class="img-button-interior">
+								<span>Music</span>
+							</div>
+						</button>
+					</div>
+					<span class="title">Grant Forrest</span>
+					<div class="page-container">
+						<div id="about-page" class="uk-grid" data-uk-grid-match>
+							<div class="uk-width-1-1 img-accent full-quote">
+								<span class="giant-text quote-text">I want to create beautiful and meaningful experiences through software and art</span>
+							</div>
+							<div class="uk-width-1-2 pane">
+								<div class="quote-box">
+									<p class="med-text quote-text img-text">
+										Something about myself here, possibly a longer paragraph. I don't know.
+									</p>
+								</div>
+							</div>
+							<div class="uk-width-1-2">
+								<div class="flip-card img-accent pane">
+									<div class="flip-card-front">
+										<span class="med-text quote-text">Email Me.</span>
+									</div>
+									<div class="flip-card-back foreground">
+										<a class="giant-text quote-text img-text">#</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="vendor/uikit-2.11.0/js/uikit.min.js"></script>
+		<script type="text/template" id="flipCardTemplate">
+			<div class="flip-card">
+				<div class="flip-card-back">
+				
+				</div>
+				
+				<div class="flip-card-front">
+				
+				</div>
+			</div>
+		</script>
+		<script src="js/flipcard.js"></script>
+	</body>
+</html>

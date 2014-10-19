@@ -1,0 +1,263 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"isActive",
+				"IsActive"
+			],
+			[
+				"flipto",
+				"flip-to-front-mixin"
+			],
+			[
+				"is",
+				"IsVisible"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/lessc/lessc.sublime-build",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 408.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2"
+	],
+	"file_history":
+	[
+		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/less/animations.css",
+		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/less/animations.css.map",
+		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/skew.html",
+		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/less/animations.less",
+		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/less/bg.css",
+		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/less/compiled.less",
+		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/less/compiled.css",
+		"/C/Users/a-typ_000/AppData/Roaming/Sublime Text 3/Packages/smart less build/README.md",
+		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/index.html",
+		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/less/skew.less",
+		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/js/skew.js",
+		"/C/Users/a-typ_000/AppData/Roaming/Sublime Text 3/Packages/LESS/LESS.sublime-settings",
+		"/C/Users/a-typ_000/Documents/Erosion/Assets/Scripts/Camera/OrbitOrigin.cs",
+		"/C/Users/a-typ_000/Documents/Erosion/Assets/Scripts/VoxPresets/VoxRandom.cs",
+		"/C/Users/a-typ_000/Documents/Erosion/Assets/Scripts/MarchingCubes/MarchingCubesMeshGenerator.cs",
+		"/C/Users/a-typ_000/Documents/Erosion/Assets/Scripts/VoxPresets/VoxCube.cs",
+		"/C/Users/a-typ_000/Documents/Erosion/Assets/Scripts/VoxPresets/VoxSphere.cs",
+		"/C/Users/a-typ_000/Documents/Erosion/Assets/Scripts/MarchingCubes/MarchingCubesConstants.cs",
+		"/C/Users/a-typ_000/Documents/GitHub/ten-ft-verse/server.js",
+		"/C/Users/a-typ_000/Documents/Erosion/$(File)",
+		"/C/Users/a-typ_000/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/C/Users/a-typ_000/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/D/MarchingCubesMeshBuilder.cs~RF15de379d.TMP",
+		"/C/Users/a-typ_000/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/a-typ_000/Documents/Erosion/Assets/Scripts/MarchingCubesMeshBuilder.cs",
+		"/C/Users/a-typ_000/Documents/GitHub/webgl-marchingcubes/js/cubeworker.js",
+		"/C/Users/a-typ_000/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/a-typ_000/Documents/GitHub/ten-ft-verse/index.html",
+		"/C/Users/a-typ_000/Documents/Erosion/Assets/Scripts/MarchingCubesMeshRenderer.cs",
+		"/C/Users/a-typ_000/Documents/GitHub/ten-ft-verse/js/search.js",
+		"/C/Users/a-typ_000/Documents/GitHub/ten-ft-verse/server/server.js",
+		"/C/Users/a-typ_000/Documents/GitHub/ten-ft-verse/html/index.html",
+		"/C/Users/a-typ_000/AppData/Roaming/Sublime Text 3/Packages/User/HTML.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"D:\\CTI\\painTxUpdated(9.12.14)"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"log",
+			"Random",
+			"EdgeKey",
+			"vertIndexList",
+			"EdgeIndex: ",
+			"Z: ",
+			"Y: ",
+			") { X:",
+			") { X: ",
+			"flip-to-front",
+			"collapse-top",
+			"collapse-height",
+			"degreeX",
+			"1, 0, 0",
+			"rotateY(",
+			"rotateX(",
+			"rotateY(0deg)",
+			"X(0deg)",
+			"' + degreeY + '",
+			"' + degreeX + '",
+			"X",
+			"degree",
+			"sourceEl",
+			"MaxSize",
+			"CubeSize",
+			"][",
+			"abs",
+			"triangles[ntriang]",
+			"(MaxSize / 2)",
+			"diagnosisTabs",
+			"DiagnosisSection",
+			"function Tab",
+			"Tab"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 37.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "grantforrestnet.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
