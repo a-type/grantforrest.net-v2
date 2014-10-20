@@ -35,6 +35,9 @@ p {
   font: inherit;
   margin: 0;
 }
+.center-text {
+  text-align: center;
+}
 .foreground {
   background: #ffffff;
 }
@@ -130,26 +133,37 @@ p {
   -webkit-text-fill-color: white;
 }
 .quote-box {
-  position: relative;
-  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+.quote-text {
+  width: 100%;
 }
 .full-quote {
   width: 100%;
-  padding: 64px;
+  padding: 64px !important;
 }
 .giant-text {
   font-size: 40px;
-  line-height: 38px;
+  line-height: 40px;
   font-family: inherit;
   color: #ffffff;
 }
 .med-text {
   font-size: 20px;
+  line-height: 24px;
   font-family: inherit;
   color: #ffffff;
 }
 .pane {
   min-height: 180px;
+  position: relative;
+}
+.banner {
+  margin-bottom: 64px;
 }
 /* Variables */
 /* Animations */

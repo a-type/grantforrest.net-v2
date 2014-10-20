@@ -4,31 +4,43 @@
 // Block quotes: 
 
 .quote-box {
-	position: relative;
-	height: 100%;
-	//top: 50%;
-	//transform: translateY(-50%);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.quote-text {
+	width: 100%;
 }
 
 .full-quote {
 	width: 100%;
-	padding: 64px;
+	padding: 64px !important;
 }
 
 .giant-text {
 	font-size: 40px;
-	line-height: 38px;
+	line-height: 40px;
 	font-family: inherit;
 	color: @foreground;
 }
 
 .med-text {
 	font-size: 20px;
+	line-height: 24px;
 	font-family: inherit;
 	color: @foreground;
 }
 
 // main content: 
+
 .pane {
 	min-height: 180px;
+	position: relative;
+}
+
+.banner {
+	margin-bottom: 64px;
 }

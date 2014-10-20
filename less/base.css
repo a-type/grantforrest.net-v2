@@ -35,6 +35,9 @@ p {
   font: inherit;
   margin: 0;
 }
+.center-text {
+  text-align: center;
+}
 .foreground {
   background: #ffffff;
 }
