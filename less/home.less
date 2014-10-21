@@ -68,3 +68,25 @@
 	position: relative;
 	top: 120px;
 }
+
+// Pages 
+
+.page-mixin {
+	display: none;
+	&:target {
+		display: block;
+	}
+	transition: 1s;
+}
+
+#about {
+	.page-mixin();
+}
+
+#dev {
+	.page-mixin();
+}
+
+#music {
+	.page-mixin();
+}

@@ -35,6 +35,9 @@ p {
   font: inherit;
   margin: 0;
 }
+a:hover {
+  text-decoration: none;
+}
 .center-text {
   text-align: center;
 }
@@ -255,5 +258,33 @@ p {
 .page-container {
   position: relative;
   top: 120px;
+}
+.page-mixin {
+  display: none;
+  transition: 1s;
+}
+.page-mixin:target {
+  display: block;
+}
+#about {
+  display: none;
+  transition: 1s;
+}
+#about:target {
+  display: block;
+}
+#dev {
+  display: none;
+  transition: 1s;
+}
+#dev:target {
+  display: block;
+}
+#music {
+  display: none;
+  transition: 1s;
+}
+#music:target {
+  display: block;
 }
 /*# sourceMappingURL=home.css.map */

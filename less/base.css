@@ -35,6 +35,9 @@ p {
   font: inherit;
   margin: 0;
 }
+a:hover {
+  text-decoration: none;
+}
 .center-text {
   text-align: center;
 }
