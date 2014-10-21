@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" href="vendor/uikit-2.11.0/css/uikit.min.css"/>
 		<link rel="stylesheet" href="less/home.css"/>
 		<link rel="stylesheet" href="less/flipcard.css"/>
 		<script src="vendor/modernizr/modernizr-latest.js"></script>
@@ -51,18 +50,18 @@
 					</div>
 					<span class="title">Grant Forrest</span>
 					<div class="page-container">
-						<div id="about" class="uk-grid" data-uk-grid-match>
-							<div class="uk-width-1-1 img-accent full-quote banner">
+						<div id="about" class="grid">
+							<div class="grid-full img-accent full-quote banner">
 								<span class="giant-text quote-text">I want to create beautiful and meaningful experiences through software and art</span>
 							</div>
-							<div class="uk-width-1-2 pane">
+							<div class="grid-small pane">
 								<div class="quote-box">
 									<p class="med-text quote-text img-text center-text">
 										Something about myself here, possibly a longer paragraph. I don't know.
 									</p>
 								</div>
 							</div>
-							<div class="uk-width-1-2">
+							<div class="grid-small">
 								<div class="flip-card img-accent pane">
 									<div class="flip-card-front quote-box">
 										<div class="quote-box">
@@ -77,23 +76,22 @@
 								</div>
 							</div>
 						</div>
+						<div id="dev" class="grid">
+							<div class="grid-full img-accent full-quote banner">
+								<span class="giant-text quote-text">I specialize in front-end development and UX of all kinds</span>
+							</div>
+							<div class="grid-small pane">
+								
+							</div>
+						</div>
+						<div id="music" class="grid">
+						
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="vendor/uikit-2.11.0/js/uikit.min.js"></script>
-		<script type="text/template" id="flipCardTemplate">
-			<div class="flip-card">
-				<div class="flip-card-back">
-				
-				</div>
-				
-				<div class="flip-card-front">
-				
-				</div>
-			</div>
-		</script>
 		<script src="js/flipcard.js"></script>
 	</body>
 </html>
