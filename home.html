@@ -26,7 +26,7 @@
 			<div class="container-bottom">
 				<div class="header">
 					<div class="cover-btns">
-						<a href="#about">
+						<a href="#info">
 							<button class="img-button">
 								<div class="img-button-interior">
 									<span>Info</span>
@@ -50,24 +50,11 @@
 					</div>
 					<span class="title">Grant Forrest</span>
 					<div class="page-container">
-						<div id="about" class="grid">
+						<div id="info" class="flex-grid">
 							<div class="grid-full img-accent full-quote banner">
 								<span class="giant-text quote-text">I want to create beautiful and meaningful experiences through software and art</span>
 							</div>
-							<div class="grid-small pane">
-								<div class="quote-box">
-									<p class="med-text quote-text img-text center-text">
-										Something about myself here, possibly a longer paragraph. I don't know.
-									</p>
-								</div>
-							</div>
-							<div class="grid-small pane">
-								<div class="quote-box">
-									<p class="med-text quote-text img-text center-text">
-										Email me.
-									</p>
-								</div>
-							</div>
+							<!-- content.js provides content here -->
 						</div>
 						<div id="dev" class="flex-grid">
 							<div class="grid-full img-accent full-quote banner">
@@ -75,7 +62,7 @@
 							</div>
 							<!-- content.js provides content here -->
 						</div>
-						<div id="music" class="grid">
+						<div id="music" class="flex-grid">
 						
 						</div>
 					</div>
@@ -85,18 +72,24 @@
 		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="vendor/lodash/js/lodash.min.js"></script>
 		<script src="js/content.js"></script>
-		<script type="text/template" id="projectItemTemplate">
-			<div class="grid-small pane img-accent">
-				<div class="quote-box">
-					<p class="quote-text img-text">
-						<%= name %>
-					</p>
-				</div>
+		 <script type="text/template" id="flexItemTemplate">
+			<div class="flex-item item">
+				<%= data.name %>
 			</div>
 		</script>
-		 <script type="text/template" id="floatingItemTemplate">
+		<script type="text/template" id="flexQuoteTemplate">
 			<div class="flex-item item">
-				<%= name %>
+				<div class="quote-box">
+					<% if (data.target) { %>
+						<a href="<%= data.target %>" class="med-text quote-text img-text center-text">
+							<%= data.text %>
+						</a>
+					<% } else { %>
+						<p class="med-text quote-text img-text center-text">
+							<%= data.text %>
+						</p>
+					<% } %>
+				</div>
 			</div>
 		</script>
 	</body>

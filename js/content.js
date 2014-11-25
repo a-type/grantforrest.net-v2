@@ -1,32 +1,58 @@
 $(function () {
-	var items = [
-		{
-			name : "Magnolia",
-			text : "Something about Magnolia"
-		},
-		{
-			name : "Something else",
-			text : "..."
-		},
-		{
-			name : "Something else",
-			text : "..."
-		},
-		{
-			name : "Something else",
-			text : "..."
-		},
-		{
-			name : "Something else",
-			text : "..."
-		}
-	];
+	_.templateSettings.variable = "data";
+
+	var items = {
+		info : [
+			{
+				text  : "Something about myself here, I don't know",
+				type  : "quote"
+			},
+			{
+				text   : "Email Me",
+				target : "mailto:a-type-dev@outlook.com",
+				type   : "quote"
+			}
+		],
+		dev : [
+			{
+				name : "Magnolia",
+				text : "Something about Magnolia",
+				type : "article"
+			},
+			{
+				name : "Something else",
+				text : "...",
+				type : "article"
+			},
+			{
+				name : "Something else",
+				text : "...",
+				type : "article"
+			},
+			{
+				name : "Something else",
+				text : "...",
+				type : "article"
+			},
+			{
+				name : "Something else",
+				text : "...",
+				type : "article"
+			}
+		],
+		music: [
+		]
+	};
 	
-	var tpl = _.template($("#floatingItemTemplate").text().trim());
+	var templates = {
+		article : _.template($("#flexItemTemplate").text().trim()),
+		quote   : _.template($("#flexQuoteTemplate").text().trim())
+	};
 	
-	var container = $("#dev");
-	
-	_.each(items, function (item) {
-		container.append($(tpl(item)));
+	_.forOwn(items, function (page, pageName) {
+		var container = $("#" + pageName);
+		_.each(page, function (item) {
+			container.append($(templates[item.type](item)));
+		});
 	});
 });
