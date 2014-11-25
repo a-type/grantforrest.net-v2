@@ -20,58 +20,34 @@
 	"buffers":
 	[
 		{
-			"file": "less/home.less",
+			"file": "home.html",
 			"settings":
 			{
-				"buffer_size": 1292,
+				"buffer_size": 2975,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "less/imageaccent.less",
+			"file": "less/floating-items.less",
 			"settings":
 			{
-				"buffer_size": 1332,
+				"buffer_size": 355,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": ".gitignore",
+			"file": "less/clearfix.less",
 			"settings":
 			{
-				"buffer_size": 33,
+				"buffer_size": 588,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "less/flair.less",
+			"file": "less/base.less",
 			"settings":
 			{
-				"buffer_size": 140,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "less/content-pieces.less",
-			"settings":
-			{
-				"buffer_size": 668,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "less/grid.less",
-			"settings":
-			{
-				"buffer_size": 505,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/content.js",
-			"settings":
-			{
-				"buffer_size": 275,
+				"buffer_size": 1366,
 				"line_ending": "Windows"
 			}
 		},
@@ -79,23 +55,15 @@
 			"file": "Gruntfile.js",
 			"settings":
 			{
-				"buffer_size": 439,
+				"buffer_size": 499,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "package.json",
+			"file": "js/content.js",
 			"settings":
 			{
-				"buffer_size": 127,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "home.html",
-			"settings":
-			{
-				"buffer_size": 3163,
+				"buffer_size": 329,
 				"line_ending": "Windows"
 			}
 		}
@@ -103,7 +71,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 400.0,
+		"height": 600.0,
 		"selected_items":
 		[
 			[
@@ -139,7 +107,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 1232.0
+		"width": 804.0
 	},
 	"console":
 	{
@@ -160,10 +128,24 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2"
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/js",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/less"
 	],
 	"file_history":
 	[
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/less/home.less",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/less/imageaccent.less",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/less/flair.less",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/less/base.less",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/package.json",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/Gruntfile.js",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/js/content.js",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/less/grid.less",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/less/content-pieces.less",
+		"/C/Users/Grant/Documents/Git/GitHub/envelopes/server/config.json",
+		"/C/Users/Grant/Documents/Git/GitHub/envelopes/server/model-config.json",
+		"/C/Users/Grant/Documents/Git/GitHub/grantforrest.net-v2/.gitignore",
 		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/less/flair.less",
 		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/css/home.css.map",
 		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/less/content-pieces.css.map",
@@ -219,7 +201,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 31.0
 	},
 	"find_in_files":
 	{
@@ -306,88 +288,59 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "less/home.less",
+					"file": "home.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1292,
+						"buffer_size": 2975,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								510,
-								250
+								2088,
+								2088
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1296.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "less/imageaccent.less",
+					"file": "less/floating-items.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1332,
+						"buffer_size": 355,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								395,
-								395
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 33,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								33,
-								33
+								310,
+								310
 							]
 						],
 						"settings":
 						{
 							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -397,20 +350,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "less/flair.less",
+					"buffer": 2,
+					"file": "less/clearfix.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 140,
+						"buffer_size": 588,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								117,
-								117
+								586,
+								586
 							]
 						],
 						"settings":
@@ -421,24 +374,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "less/content-pieces.less",
+					"buffer": 3,
+					"file": "less/base.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 668,
+						"buffer_size": 1366,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								668,
-								668
+								41,
+								41
 							]
 						],
 						"settings":
@@ -454,151 +407,61 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "less/grid.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 505,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								505,
-								505
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "js/content.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 275,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								271,
-								271
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
+					"buffer": 4,
 					"file": "Gruntfile.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 439,
+						"buffer_size": 499,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								185,
-								185
+								388,
+								388
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "package.json",
+					"buffer": 5,
+					"file": "js/content.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 127,
+						"buffer_size": 329,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1,
-								1
+								146,
+								146
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "home.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3163,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3018,
-								3018
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 900.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -606,7 +469,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -646,7 +509,7 @@
 	"project": "grantforrestnet.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -1,0 +1,29 @@
+@import "clearfix";
+@import "base";
+
+@gutter: 4%;
+@bottom-gutter: 48px;
+@item-min-width: 320px;
+@item-min-height: 160px;
+
+div.flex-grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-bottom: @bottom-gutter;
+
+	div.flex-item {
+		display: inline-flex;
+		flex-grow: 1;
+		margin-left: @gutter;
+		margin-top: @gutter;
+
+		box-sizing: border-box;
+
+		.transition(@duration: 0.5s);
+		box-shadow: 1px 2px 2px #ddd;
+		min-height: @item-min-height;
+		min-width: @item-min-width;
+	}
+	.clearfix();
+}

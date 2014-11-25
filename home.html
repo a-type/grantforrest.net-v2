@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/home.css"/>
-		<link rel="stylesheet" href="css/flipcard.css"/>
+		<link rel="stylesheet" href="css/flex-grid.css"/>
 		<script src="vendor/modernizr/modernizr-latest.js"></script>
 		<script>
 			Modernizr.addTest('backgroundclip',function() {
@@ -61,22 +61,15 @@
 									</p>
 								</div>
 							</div>
-							<div class="grid-small">
-								<div class="flip-card img-accent pane">
-									<div class="flip-card-front quote-box">
-										<div class="quote-box">
-											<div class="med-text quote-text center-text">Email Me.</div>
-										</div>
-									</div>
-									<div class="flip-card-back foreground">
-										<div class="quote-box">
-											<a class="giant-text quote-text img-text center-text">#</a>
-										</div>
-									</div>
+							<div class="grid-small pane">
+								<div class="quote-box">
+									<p class="med-text quote-text img-text center-text">
+										Email me.
+									</p>
 								</div>
 							</div>
 						</div>
-						<div id="dev" class="grid">
+						<div id="dev" class="flex-grid">
 							<div class="grid-full img-accent full-quote banner">
 								<span class="giant-text quote-text">I specialize in front-end development and UX of all kinds</span>
 							</div>
@@ -91,7 +84,6 @@
 		</div>
 		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="vendor/lodash/js/lodash.min.js"></script>
-		<script src="js/flipcard.js"></script>
 		<script src="js/content.js"></script>
 		<script type="text/template" id="projectItemTemplate">
 			<div class="grid-small pane img-accent">
@@ -100,6 +92,11 @@
 						<%= name %>
 					</p>
 				</div>
+			</div>
+		</script>
+		 <script type="text/template" id="floatingItemTemplate">
+			<div class="flex-item item">
+				<%= name %>
 			</div>
 		</script>
 	</body>

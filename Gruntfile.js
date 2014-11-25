@@ -15,7 +15,8 @@ module.exports = function (grunt) {
 			default : {
 				files : {
 					"css/home.css" : "less/home.less",
-					"css/flipcard.css" : "less/flipcard.less"
+					"css/flipcard.css" : "less/flipcard.less",
+					"css/flex-grid.css" : "less/flex-grid.less"
 				}
 			}
 		}

@@ -3,10 +3,26 @@ $(function () {
 		{
 			name : "Magnolia",
 			text : "Something about Magnolia"
+		},
+		{
+			name : "Something else",
+			text : "..."
+		},
+		{
+			name : "Something else",
+			text : "..."
+		},
+		{
+			name : "Something else",
+			text : "..."
+		},
+		{
+			name : "Something else",
+			text : "..."
 		}
 	];
 	
-	var tpl = _.template($("#projectItemTemplate").text().trim());
+	var tpl = _.template($("#floatingItemTemplate").text().trim());
 	
 	var container = $("#dev");
 	
