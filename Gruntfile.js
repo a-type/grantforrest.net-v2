@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = function (grunt) {
-	var lessFiles = [ "less/*.less" ];
+	var lessFiles = [ "./content/themes/a-type/assets/less/*.less" ];
 	
 	grunt.initConfig({
 		watch : {
@@ -14,8 +14,7 @@ module.exports = function (grunt) {
 		less : {
 			default : {
 				files : {
-					"css/home.css" : "less/home.less",
-					"css/flipcard.css" : "less/flipcard.less"
+					"./content/themes/a-type/assets/css/a-type.css" : "./content/themes/a-type/assets/less/home.less"
 				}
 			}
 		}
