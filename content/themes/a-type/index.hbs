@@ -5,14 +5,14 @@
 <header class="main-header">
     <nav class="main-nav overlay clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-        <a class="subscribe-button icon-feed img-button" href="{{@blog.url}}/rss/">Subscribe</a>
+        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
     </nav>
     <div class="main-header-content">
-        <h1 class="page-title">{{@blog.title}}</h1>
-        <h2 class="page-description">{{@blog.description}}</h2>
+        <h1 class="page-title" {{#if @blog.cover}}style="background-image: url({{@blog.cover}});"{{/if}}>{{@blog.title}}</h1>
+        <h2 class="page-description" {{#if @blog.cover}}style="background-image: url({{@blog.cover}});"{{/if}}>{{@blog.description}}</h2>
     </div>
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-    <div class="img-stripe"></div>
+    <div class="img-stripe" {{#if @blog.cover}}style="background-image: url({{@blog.cover}});"{{/if}}></div>
 </header>
 
 {{! The main content area on the homepage }}

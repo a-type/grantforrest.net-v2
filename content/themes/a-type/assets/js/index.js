@@ -1,5 +1,5 @@
 /**
- * Main JS file for Casper behaviours
+ * Main JS file for A-Type behaviours
  */
 
 /* globals jQuery, document */
@@ -59,6 +59,17 @@
 
         $(".scroll-down").arctic_scroll();
 
+        var mainHeader = $(".main-header");
+
+        var previousYOffset = window.pageYOffset;
+        mainHeader.css("top", -previousYOffset + "px");
+        $(window).scroll(function () {
+            var delta = window.pageYOffset - previousYOffset;
+            previousYOffset = window.pageYOffset;
+            var currentHeaderTop = parseInt(mainHeader.css("top").split("px")[0]);
+            mainHeader.css("top", (currentHeaderTop - delta) + "px");
+            console.log(delta);
+        });
     });
 
     // smartresize
@@ -93,6 +104,5 @@
                 $htmlBody.stop(true, false).animate({scrollTop: ($(this.hash).offset().top) }, allOptions.speed);
             }
         });
-
     };
 })(jQuery, 'smartresize');

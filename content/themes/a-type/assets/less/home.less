@@ -3,7 +3,49 @@
 
 /* Variables */
 @bg-color: #fff;
-@stripe-height: 2%;
+@stripe-height: 4%;
+
+body {
+	.img-accent;
+}
+
+footer {
+	background-color: @bg-color;
+	border-top: none;
+}
+
+h1, h2, h3 {
+	.img-text;
+}
+
+.floating-item {
+	background: @bg-color;
+	padding: 8px;
+	-webkit-box-shadow: 0px 3px 82px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 82px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 82px 0px rgba(0,0,0,0.75);
+}
+
+.post {
+	.floating-item;
+	margin-top: 0;
+	margin-bottom: 80px;
+}
+
+.pagination {
+	.floating-item;
+}
+
+.content {
+	padding-top: 50%;
+}
+
+.main-header {
+	position: absolute;
+	top: 0;
+	background: @bg-color;
+	z-index: 99;
+}
 
 .img-stripe {
 	.img-accent();
@@ -17,6 +59,7 @@
 	display: inline;
 	font-size: 80px;
 	line-height: 80px;
+	text-align: left;
 	.img-text();
 }
 
@@ -27,9 +70,10 @@
 .main-header-content {
 	position: absolute;
 	bottom: @stripe-height;
-	left: 20px;
 	height: auto;
 	max-width: none;
+	text-align: left;
+	width: 100%;
 }
 
 .main-header {
@@ -38,4 +82,11 @@
 
 .scroll-down {
 	color: black;
+	right: 8px;
+	left: auto;
+	bottom: @stripe-height;
+}
+
+.home-template .main-header:after {
+	display: none;
 }
