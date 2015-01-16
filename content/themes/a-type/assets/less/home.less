@@ -16,11 +16,12 @@ footer {
 
 h1, h2, h3 {
 	.img-text;
+	text-indent: 0;
 }
 
 .floating-item {
 	background: @bg-color;
-	padding: 8px;
+	padding: 32px 64px;
 	-webkit-box-shadow: 0px 3px 82px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 3px 82px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 3px 82px 0px rgba(0,0,0,0.75);
@@ -30,6 +31,10 @@ h1, h2, h3 {
 	.floating-item;
 	margin-top: 0;
 	margin-bottom: 80px;
+
+	&:after {
+		display: none;
+	}
 }
 
 .pagination {
@@ -37,6 +42,10 @@ h1, h2, h3 {
 }
 
 .content {
+	padding-top: 5em;
+}
+
+.home-content {
 	padding-top: 50%;
 }
 
@@ -56,6 +65,7 @@ h1, h2, h3 {
 }
 
 .page-title {
+	font-family: "Lato", sans-serif;
 	display: inline;
 	font-size: 80px;
 	line-height: 80px;
@@ -64,6 +74,7 @@ h1, h2, h3 {
 }
 
 .page-description {
+	font-family: "Open Sans", sans-serif;
 	display: inline;
 }
 
@@ -89,4 +100,39 @@ h1, h2, h3 {
 
 .home-template .main-header:after {
 	display: none;
+}
+
+.main-nav.overlay {
+	background: none;
+}
+
+.main-nav.overlay a.subscribe-button {
+	background: transparent;
+	color: rgba(0,0,0,0.1);
+	border: none;
+
+	&:hover {
+		color: black;
+		background: rgba(0, 0, 0, 0.1);
+		outline: none;
+	}
+
+	&:focus, &:active {
+		color: black;
+		outline: none;
+		background: rgba(0, 0, 0, 0.2);
+	}
+}
+
+blockquote {
+	margin-left: 2em;
+}
+
+.post-content.full-img {
+	padding: 0;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	-webkit-box-shadow: 0px 3px 32px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 32px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 32px 0px rgba(0,0,0,0.75);
 }
