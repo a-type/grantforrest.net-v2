@@ -10,6 +10,7 @@
 
 body {
 	.img-accent;
+	position: relative;
 }
 
 footer {
@@ -40,7 +41,7 @@ h1, h2, h3 {
 	.shadow-mixin(@shadow-size: @middle-shadow-size);
 }
 
-.post-template .post, .post {
+article, .post-template .post, .post {
 	.floating-item;
 	margin-top: 0;
 	margin-bottom: 80px;
@@ -63,6 +64,7 @@ h1, h2, h3 {
 	top: 0;
 	background: @bg-color;
 	z-index: 99;
+	height: 100% !important;
 	.shadow-mixin(@shadow-size: @top-shadow-size);
 }
 
@@ -77,15 +79,17 @@ h1, h2, h3 {
 .page-title {
 	font-family: "Lato", sans-serif;
 	display: inline;
-	font-size: 80px;
-	line-height: 80px;
+	font-size: 6em;
+	line-height: 0em;
 	text-align: left;
+	white-space: nowrap;
 	.img-text();
 }
 
 .page-description {
 	font-family: "Open Sans", sans-serif;
 	display: inline;
+	white-space: nowrap;
 }
 
 .main-header-content {
@@ -165,5 +169,27 @@ hr {
 }
 
 .tag-head.main-header, .post-head.main-header {
-	height: 80%;
+	height: 80% !important;
+}
+
+.quicklink {
+	width: 50%;
+	display: inline-block;
+	text-align:center;
+
+	h1 {
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}
+
+.feed-label {
+	text-align: center;
+	width: 100%;
+	font-weight: 700;
+	font-size: 48px;
+	margin-bottom: 32px;
+	opacity: 0.5;
+	text-transform: uppercase;
+	color: white;
 }
