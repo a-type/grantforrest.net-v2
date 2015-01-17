@@ -59,17 +59,13 @@
 
         var mainHeader = $(".main-header");
 
-        var previousYOffset = window.pageYOffset;
-        mainHeader.css("top", -previousYOffset + "px");
+        mainHeader.css("top", (window.pageYOffset * -2) + "px");
         $(window).scroll(function () {
             // short circuit
             if (window.pageYOffset > (window.outerHeight / 2)) {
                 return;
             }
-            var delta = window.pageYOffset - previousYOffset;
-            previousYOffset = window.pageYOffset;
-            var currentHeaderTop = parseInt(mainHeader.css("top").split("px")[0]);
-            mainHeader.css("top", (currentHeaderTop - delta) + "px");
+            mainHeader.css("top", (window.pageYOffset * -2) + "px");
         });
 
         var windowHeight = $(window).height();
