@@ -6,19 +6,28 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+{{#if image}}
+<script type="text/javascript">
+    accentImagePath = "{{image}}";
+</script>
+{{/if}}
+
+<header class="main-header post-head">
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
-        <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+        <a class="button back-button icon-arrow-left img-accent" href="{{@blog.url}}">Home</a>
+        <a class="button subscribe-button icon-feed img-accent" href="{{@blog.url}}/rss/">Subscribe</a>
     </nav>
+    <div class="main-header-content">
+        <h1 class="page-title" {{#if image}} style="background-image: url({{image}});"{{/if}}>{{title}}</h1>
+    </div>
+    <div class="img-stripe" {{#if image}} style="background-image: url({{image}});"{{/if}}></div>
 </header>
 
-<main class="content" role="main">
+<main class="content" style="padding-top: 50%;" role="main">
 
     <article class="{{post_class}}">
 
         <header class="post-header">
-            <h1 class="post-title">{{title}}</h1>
             <section class="post-meta">
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
             </section>

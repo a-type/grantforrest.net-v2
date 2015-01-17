@@ -21,8 +21,11 @@
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
+    <script type="text/javascript">
+    var accentImagePath;
+    </script>
 </head>
-<body class="{{body_class}}" {{#if @blog.cover}}style="background-image: url({{@blog.cover}});"{{/if}}>
+<body class="{{body_class}}">
 
     {{! Everything else gets inserted here }}
     {{{body}}}
@@ -36,8 +39,14 @@
     {{ghost_foot}}
 
     {{! The main JavaScript file for Casper }}
+
+    {{#if @blog.cover}}
+    <script type="text/javascript">
+        accentImagePath = accentImagePath ? accentImagePath : "{{@blog.cover}}";
+    </script>
+    {{/if}}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
-
+    <script type="text/javascript" src="{{asset "js/accent-image.js"}}"></script>
 </body>
 </html>
