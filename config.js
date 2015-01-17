@@ -10,7 +10,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://www.grantforrest.net',
+        url: 'https://www.grantforrest.net',
         mail: {},
         database: {
             client: 'postgres',
