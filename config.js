@@ -30,7 +30,9 @@ config = {
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: process.env.PORT
         },
-
+        paths: {
+            contentPath: path.join(__dirname, '/content/')
+        },
         //heroku removes images periodically :/
         fileStorage: false
     },
