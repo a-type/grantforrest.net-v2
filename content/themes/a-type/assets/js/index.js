@@ -61,7 +61,7 @@
 
         var previousYOffset = window.pageYOffset;
         mainHeader.css("top", -previousYOffset + "px");
-        $(window).scroll(debounce(function () {
+        $(window).scroll(function () {
             // short circuit
             if (window.pageYOffset > (window.outerHeight / 2)) {
                 return;
@@ -70,7 +70,7 @@
             previousYOffset = window.pageYOffset;
             var currentHeaderTop = parseInt(mainHeader.css("top").split("px")[0]);
             mainHeader.css("top", (currentHeaderTop - delta) + "px");
-        }, 5));
+        });
 
         var windowHeight = $(window).height();
         $(".content").css("padding-top", (windowHeight * 0.75) + "px");
