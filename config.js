@@ -13,19 +13,26 @@ config = {
         url: 'http://grantforrest.net',
         mail: {},
         database: {
-            client: 'sqlite3',
+            client: 'postgres',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
+                host: process.env.POSTGRES_HOST,
+                database: process.env.POSTGRES_DATABASE,
+                user: process.env.POSTGRES_USER,
+                password: process.env.POSTGRESS_PASSWORD,
+                port: '5432'
             },
             debug: false
         },
 
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: '127.0.0.1',
+            host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: '2368'
-        }
+            port: 'process.env.PORT'
+        },
+
+        //heroku removes images periodically :/
+        fileStorage: false
     },
 
     // ### Development **(default)**

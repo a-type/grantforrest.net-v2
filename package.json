@@ -6,6 +6,7 @@
 		"grunt-contrib-watch": "^0.6.1"
 	},
 	"dependencies": {
-		"ghost": "^0.5.8"
+		"ghost": "^0.5.8",
+		"pg": "latest"
 	}
 }
