@@ -17,7 +17,7 @@ module.exports = function (grunt) {
 					"./content/themes/a-type/assets/css/a-type.css" : "./content/themes/a-type/assets/less/home.less"
 				}
 			}
-		}
+		},
 	});
 	
 	grunt.loadNpmTasks("grunt-contrib-less");
