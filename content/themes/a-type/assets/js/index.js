@@ -57,24 +57,64 @@
         casperFullImg();
         $(window).smartresize(casperFullImg);
 
+        var USE3D = false;
+
+        var yOffset = window.pageYOffset;
         var mainHeader = $(".main-header");
 
-        mainHeader.css("top", (window.pageYOffset * -2) + "px");
-        $(window).scroll(function () {
-            // short circuit
-            if (window.pageYOffset > (window.outerHeight / 2)) {
-                return;
+        var prefs = ['-webkit', '-moz', '-o', '-ms'];
+        function prefix(prop, value) {
+            var obj = {};
+            for (var pref in prefs) {
+                obj[prefs[pref] + "-" + prop] = value;
             }
-            mainHeader.css("top", (window.pageYOffset * -2) + "px");
+            return obj;
+        }
+
+        function paralaxHandler3d () {
+            mainHeader.css(prefix("transform", "translate3d(0," +
+                (yOffset * -2) + 'px, 0)'));
+        }
+
+        function paralaxHandler2d () {
+            mainHeader.css("top", (yOffset * -2) + "px");
+        }
+
+        if (USE3D) {
+            paralaxHandler3d();
+        }
+        else {
+            paralaxHandler2d();
+        }
+
+        $(window).scroll(function () {
+            window.requestAnimationFrame(function () {
+                yOffset = window.pageYOffset;
+                if (yOffset > (window.outerHeight / 2)) {
+                    return;
+                }
+                if (USE3D) {
+                    paralaxHandler3d();
+                }
+                else {
+                    paralaxHandler2d();
+                }
+            });
         });
 
-        var windowHeight = $(window).height();
-        $(".content").css("padding-top", (windowHeight * 0.75) + "px");
+        var windowHeight;
 
-        $(window).resize(debounce(function () {
-            var windowHeight = $(window).height();
+        function resizeHandler () {
+            windowHeight = $(window).height();
             $(".content").css("padding-top", (windowHeight * 0.75) + "px");
-        }));
+        }
+
+        resizeHandler();
+
+        $(window).smartresize(resizeHandler);
+
+        //from accent-image.js
+        $(window).smartresize(responsiveBackgroundResize);
     });
 
     // smartresize
