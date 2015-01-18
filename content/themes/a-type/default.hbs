@@ -40,11 +40,14 @@
 
     {{! The main JavaScript file for Casper }}
 
-    {{#if @blog.cover}}
     <script type="text/javascript">
+        {{#if @blog.cover}}
         accentImagePath = accentImagePath ? accentImagePath : "{{@blog.cover}}";
+        {{else}}
+        accentImagePath = accentImagePath ? accentImagePath : "{{asset "img/mountain.png"}}";
+        {{/if}}
+        var blogUrl = "{{ @blog.url }}";
     </script>
-    {{/if}}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/accent-image.js"}}"></script>

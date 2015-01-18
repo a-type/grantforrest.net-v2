@@ -32,9 +32,7 @@ config = {
         },
         paths: {
             contentPath: path.join(__dirname, '/content/')
-        },
-        //heroku removes images periodically :/
-        fileStorage: false
+        }
     },
 
     // ### Development **(default)**
