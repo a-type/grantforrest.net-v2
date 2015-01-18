@@ -3,13 +3,12 @@
 		"start": "node app.js"
 	},
 	"devDependencies": {
-		"canvas": "latest",
 		"grunt": "^0.4.5",
 		"grunt-contrib-less": "^0.12.0",
 		"grunt-contrib-watch": "^0.6.1"
 	},
 	"dependencies": {
-		"canvas": "git://github.com/elspoono/node-canvas-heroku.git",
+		"canvas": "latest",
 		"express": "^4.11.0",
 		"ghost": "^0.5.8",
 		"pg": "latest"
