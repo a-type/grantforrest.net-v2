@@ -6,19 +6,21 @@ var Image  = Canvas.Image;
 var app = express();
 var http = require("http");
 var https = require("https");
-var url = require("url");
+var Url = require("url");
 var fs = require("fs");
 
 ghost({
 	config: path.join(__dirname, 'config.js')
 }).then(function (ghostServer) {
 
+	var appHostname = Url.parse(ghostServer.config.url).hostname;
+
 	app.route("/resize-image").get(function (req, res, next) {
 		var width = req.query.width;
 		var height = req.query.height;
 		var imgSrc = req.query.src;
 
-		var imgUrl = url.parse(imgSrc);
+		var imgUrl = Url.parse(imgSrc);
 
 		function resizeAndSendImageBuffer(buffer) {
 			var img = new Image();
@@ -35,7 +37,7 @@ ghost({
 			img.src = buffer;
 		}
 
-		if (imgUrl.hostname === "localhost" || imgUrl.hostname === "127.0.0.1" || imgUrl.hostname === ghostServer.config.get().url) {
+		if (imgUrl.hostname === "localhost" || imgUrl.hostname === "127.0.0.1" || imgUrl.hostname === appHostname) {
 			var resolvedFilePath = "./content/themes/a-type" + imgUrl.pathname;
 
 			fs.readFile(resolvedFilePath, function (err, data) {
@@ -74,7 +76,7 @@ ghost({
 			});
 		}
 		else {
-			res.status(400).send("Unrecoginzed image url protocol: " + imgUrl.protocol);
+			res.status(400).send("Unsupported image url protocol: " + imgUrl.protocol);
 		}
 	});
 
