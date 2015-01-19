@@ -1,4 +1,11 @@
 bower_components
-node_modules
+node_modules/
 content/images
 content/data
+css
+
+.elasticbeanstalk/*
+
+!.elasticbeanstalk/*.cfg.yml
+
+!.elasticbeanstalk/*.global.yml

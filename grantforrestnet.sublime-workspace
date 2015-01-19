@@ -20,82 +20,58 @@
 	"buffers":
 	[
 		{
-			"file": "less/home.less",
+			"file": "content/themes/a-type/assets/less/home.less",
 			"settings":
 			{
-				"buffer_size": 1292,
+				"buffer_size": 1979,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "less/imageaccent.less",
+			"file": "content/themes/a-type/assets/js/index.js",
 			"settings":
 			{
-				"buffer_size": 1332,
+				"buffer_size": 2310,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/themes/a-type/index.hbs",
+			"settings":
+			{
+				"buffer_size": 1078,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/themes/a-type/assets/less/imageaccent.less",
+			"settings":
+			{
+				"buffer_size": 634,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": ".gitignore",
+			"file": "content/themes/a-type/default.hbs",
 			"settings":
 			{
-				"buffer_size": 33,
-				"line_ending": "Windows"
+				"buffer_size": 1659,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "less/flair.less",
+			"file": "content/themes/a-type/assets/css/a-type.css",
 			"settings":
 			{
-				"buffer_size": 140,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "less/content-pieces.less",
-			"settings":
-			{
-				"buffer_size": 668,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "less/grid.less",
-			"settings":
-			{
-				"buffer_size": 505,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/content.js",
-			"settings":
-			{
-				"buffer_size": 275,
-				"line_ending": "Windows"
+				"buffer_size": 5324,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "Gruntfile.js",
 			"settings":
 			{
-				"buffer_size": 439,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "package.json",
-			"settings":
-			{
-				"buffer_size": 127,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "home.html",
-			"settings":
-			{
-				"buffer_size": 3163,
+				"buffer_size": 486,
 				"line_ending": "Windows"
 			}
 		}
@@ -160,10 +136,37 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2"
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content/themes",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content/themes/a-type",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content/themes/a-type/assets",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content/themes/a-type/assets/css",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content/themes/a-type/assets/js",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content/themes/a-type/assets/less",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content/themes/casper"
 	],
 	"file_history":
 	[
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content/themes/casper/index.hbs",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content/themes/a-type/assets/css/screen.css",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content/themes/a-type/assets/less/content-pieces.less",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content/themes/a-type/assets/less/layout-overrides.less",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content/themes/a-type/assets/css/home.css",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content/themes/a-type/assets/less/base.less",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/less/home.less",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/less/imageaccent.less",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/.gitignore",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/Gruntfile.js",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/package.json",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/app.js",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/home.html",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/config.js",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/less/flair.less",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/less/content-pieces.less",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/less/grid.less",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/js/content.js",
+		"/C/Users/Grant/Documents/Git/grantforrest.net-v2/content/themes/a-type/package.json",
 		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/less/flair.less",
 		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/css/home.css.map",
 		"/C/Users/a-typ_000/Documents/GitHub/grantforrest.net-v2/less/content-pieces.css.map",
@@ -219,7 +222,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 55.0
 	},
 	"find_in_files":
 	{
@@ -234,6 +237,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			".inner",
 			"480",
 			"120",
 			"ease",
@@ -306,24 +310,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "less/home.less",
+					"file": "content/themes/a-type/assets/less/home.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1292,
+						"buffer_size": 1979,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								510,
-								250
+								1757,
+								1757
 							]
 						],
 						"settings":
@@ -332,90 +336,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "less/imageaccent.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1332,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								395,
-								395
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 33,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								33,
-								33
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2618.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "less/flair.less",
+					"buffer": 1,
+					"file": "content/themes/a-type/assets/js/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 140,
+						"buffer_size": 2310,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								117,
-								117
+								2139,
+								2139
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -425,20 +373,50 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "less/content-pieces.less",
+					"buffer": 2,
+					"file": "content/themes/a-type/index.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 668,
+						"buffer_size": 1078,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								668,
-								668
+								961,
+								961
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "content/themes/a-type/assets/less/imageaccent.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 634,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								308,
+								308
 							]
 						],
 						"settings":
@@ -454,56 +432,85 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "less/grid.less",
+					"buffer": 4,
+					"file": "content/themes/a-type/default.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 505,
+						"buffer_size": 1659,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								505,
-								505
+								799,
+								799
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "js/content.js",
+					"buffer": 5,
+					"file": "content/themes/a-type/assets/css/a-type.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 275,
+						"buffer_size": 5324,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								271,
-								271
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3772.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 486,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								320,
+								320
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -511,94 +518,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "Gruntfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 439,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								185,
-								185
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 127,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1,
-								1
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "home.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3163,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3018,
-								3018
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 900.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -634,7 +553,7 @@
 			1.0
 		]
 	},
-	"menu_visible": false,
+	"menu_visible": true,
 	"output.exec":
 	{
 		"height": 37.0
@@ -681,7 +600,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 251.0,
+	"side_bar_width": 328.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
