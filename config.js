@@ -31,7 +31,7 @@ config = {
             port: process.env.PORT
         },
         paths: {
-            contentPath: path.join(__dirname, '/content/')
+            contentPath: "/data"
         }
     },
 
