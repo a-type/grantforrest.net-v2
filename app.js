@@ -38,7 +38,13 @@ ghost({
 		}
 
 		if (imgUrl.hostname === "localhost" || imgUrl.hostname === "127.0.0.1" || imgUrl.hostname === appHostname) {
-			var resolvedFilePath = "./content/themes/a-type" + imgUrl.pathname;
+			var resolvedFilePath;
+			if (imgSrc.indexOf("assets/img/mountain.png") > 0) {
+				resolvedFilePath = "./content/themes/a-type" + imgUrl.pathname;
+			}
+			else {
+				resolvedFilePath = "./content/images" + imgUrl.pathname;
+			}
 
 			fs.readFile(resolvedFilePath, function (err, data) {
 				if (err) {
