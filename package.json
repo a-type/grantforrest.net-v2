@@ -1,17 +1,18 @@
 {
-	"scripts": {
-		"start": "node app.js",
-		"prod": "NODE_ENV=production node app.js --production"
-	},
-	"devDependencies": {
-		"grunt": "^0.4.5",
-		"grunt-contrib-less": "^0.12.0",
-		"grunt-contrib-watch": "^0.6.1"
-	},
-	"dependencies": {
-		"canvas": "latest",
-		"express": "^4.11.0",
-		"ghost": "^0.5.8",
-		"pg": "latest"
-	}
+  "scripts": {
+    "start": "node app.js",
+    "prod": "NODE_ENV=production node app.js --production"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^0.12.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "dependencies": {
+    "canvas": "latest",
+    "express": "^4.11.0",
+    "ghost": "^0.5.8",
+    "pg": "latest",
+    "forever": "~0.13.0"
+  }
 }
