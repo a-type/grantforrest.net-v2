@@ -4,5 +4,5 @@ content/images
 content/data
 css
 
-out.log
-in.log
+./out.log
+./in.log
