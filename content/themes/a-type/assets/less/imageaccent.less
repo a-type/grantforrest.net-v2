@@ -2,7 +2,7 @@
 
 .fade-gray-mixin {
 	from { background-color: #eee; }
-	to   { background-color: #483232; }
+	to   { background-color: #32323f; }
 }
 
 @-webkit-keyframes fade-gray { .fade-gray-mixin; }
@@ -15,7 +15,8 @@
 	// no background url yet... defined in JS
 	background: #eee 0% 0% no-repeat;
 	background-attachment: fixed;
-	.animation-mixin(@animation: fade-gray, @duration: 1s);
+	.animation-mixin(@animation: fade-gray, @duration: 4s);
+	animation-fill-mode: forwards;
 }
 
 .img-text {
