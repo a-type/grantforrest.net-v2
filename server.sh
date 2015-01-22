@@ -2,7 +2,7 @@
 
 ./node_modules/forever/bin/forever \
 	start \
-	-al forever.log
-	-ao out.log
-	-ae err.log
+	-l forever.log \
+	-o out.log \
+	-e err.log \
 	app.js
