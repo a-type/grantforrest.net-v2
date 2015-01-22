@@ -1,0 +1,2 @@
+Thu, 22 Jan 2015 03:04:30 GMT express deprecated req.param(name): Use req.params, req.body, or req.query instead at node_modules/ghost/core/server/data/sitemap/handler.js:9:48
+Thu, 22 Jan 2015 03:04:30 GMT express deprecated req.param(name): Use req.params, req.body, or req.query instead at node_modules/ghost/core/server/data/sitemap/handler.js:28:24
