@@ -1,3 +1,5 @@
+@import "base";
+
 .fade-gray-mixin {
 	from { background-color: #eee; }
 	to   { background-color: #483232; }
@@ -13,7 +15,7 @@
 	// no background url yet... defined in JS
 	background: #eee 0% 0% no-repeat;
 	background-attachment: fixed;
-	animation: fade-gray 1s;
+	.animation-mixin(@animation: fade-gray, @duration: 1s);
 }
 
 .img-text {

@@ -81,6 +81,14 @@ a {
 	transform-style: preserve-3d;
 }
 
+.animation-mixin(@animation, @duration) {
+	animation: @animation @duration;
+	-webkit-animation: @animation @duration;
+	-o-animation: @animation @duration;
+	-ms-animation: @animation @duration;
+	-moz-animation: @animation @duration;
+}
+
 .btn {
 	padding-left: 16px;
 	padding-right: 16px;
