@@ -3,3 +3,6 @@ node_modules/
 content/images
 content/data
 css
+
+out.log
+in.log
