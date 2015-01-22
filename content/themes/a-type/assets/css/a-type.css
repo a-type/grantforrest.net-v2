@@ -123,26 +123,70 @@ a:hover {
     background-color: #32323f;
   }
 }
+.stay-gray-mixin from {
+  background-color: #32323f;
+}
+.stay-gray-mixin to {
+  background-color: #32323f;
+}
+@-webkit-keyframes stay-gray {
+  from {
+    background-color: #32323f;
+  }
+  to {
+    background-color: #32323f;
+  }
+}
+@-moz-keyframes stay-gray {
+  from {
+    background-color: #32323f;
+  }
+  to {
+    background-color: #32323f;
+  }
+}
+@-ms-keyframes stay-gray {
+  from {
+    background-color: #32323f;
+  }
+  to {
+    background-color: #32323f;
+  }
+}
+@-o-keyframes stay-gray {
+  from {
+    background-color: #32323f;
+  }
+  to {
+    background-color: #32323f;
+  }
+}
+@keyframes stay-gray {
+  from {
+    background-color: #32323f;
+  }
+  to {
+    background-color: #32323f;
+  }
+}
 .img-accent {
   background: #eeeeee 0% 0% no-repeat;
   background-attachment: fixed;
-  animation: fade-gray 4s;
-  -webkit-animation: fade-gray 4s;
-  -o-animation: fade-gray 4s;
-  -ms-animation: fade-gray 4s;
-  -moz-animation: fade-gray 4s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -moz-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -o-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -ms-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  animation: fade-gray 5s 0s stay-gray 5s 5s;
 }
 .img-text {
   color: #323232;
   background: #eeeeee 0% 0% no-repeat;
   background-attachment: fixed;
-  animation: fade-gray 4s;
-  -webkit-animation: fade-gray 4s;
-  -o-animation: fade-gray 4s;
-  -ms-animation: fade-gray 4s;
-  -moz-animation: fade-gray 4s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -moz-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -o-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -ms-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  animation: fade-gray 5s 0s stay-gray 5s 5s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -150,12 +194,11 @@ a:hover {
   box-shadow: 0;
   background: #eeeeee 0% 0% no-repeat;
   background-attachment: fixed;
-  animation: fade-gray 4s;
-  -webkit-animation: fade-gray 4s;
-  -o-animation: fade-gray 4s;
-  -ms-animation: fade-gray 4s;
-  -moz-animation: fade-gray 4s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -moz-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -o-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -ms-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  animation: fade-gray 5s 0s stay-gray 5s 5s;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 8px;
@@ -182,12 +225,11 @@ a:hover {
   color: #323232;
   background: #eeeeee 0% 0% no-repeat;
   background-attachment: fixed;
-  animation: fade-gray 4s;
-  -webkit-animation: fade-gray 4s;
-  -o-animation: fade-gray 4s;
-  -ms-animation: fade-gray 4s;
-  -moz-animation: fade-gray 4s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -moz-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -o-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -ms-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  animation: fade-gray 5s 0s stay-gray 5s 5s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -205,12 +247,11 @@ a:hover {
 body {
   background: #eeeeee 0% 0% no-repeat;
   background-attachment: fixed;
-  animation: fade-gray 4s;
-  -webkit-animation: fade-gray 4s;
-  -o-animation: fade-gray 4s;
-  -ms-animation: fade-gray 4s;
-  -moz-animation: fade-gray 4s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -moz-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -o-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -ms-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  animation: fade-gray 5s 0s stay-gray 5s 5s;
   position: relative;
 }
 footer {
@@ -223,12 +264,11 @@ h3 {
   color: #323232;
   background: #eeeeee 0% 0% no-repeat;
   background-attachment: fixed;
-  animation: fade-gray 4s;
-  -webkit-animation: fade-gray 4s;
-  -o-animation: fade-gray 4s;
-  -ms-animation: fade-gray 4s;
-  -moz-animation: fade-gray 4s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -moz-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -o-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -ms-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  animation: fade-gray 5s 0s stay-gray 5s 5s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -286,12 +326,11 @@ article:after,
 .img-stripe {
   background: #eeeeee 0% 0% no-repeat;
   background-attachment: fixed;
-  animation: fade-gray 4s;
-  -webkit-animation: fade-gray 4s;
-  -o-animation: fade-gray 4s;
-  -ms-animation: fade-gray 4s;
-  -moz-animation: fade-gray 4s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -moz-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -o-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -ms-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  animation: fade-gray 5s 0s stay-gray 5s 5s;
   width: 100%;
   height: 4%;
   bottom: 0;
@@ -307,12 +346,11 @@ article:after,
   color: #323232;
   background: #eeeeee 0% 0% no-repeat;
   background-attachment: fixed;
-  animation: fade-gray 4s;
-  -webkit-animation: fade-gray 4s;
-  -o-animation: fade-gray 4s;
-  -ms-animation: fade-gray 4s;
-  -moz-animation: fade-gray 4s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -moz-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -o-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -ms-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  animation: fade-gray 5s 0s stay-gray 5s 5s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -376,23 +414,21 @@ blockquote::before {
   height: 100%;
   background: #eeeeee 0% 0% no-repeat;
   background-attachment: fixed;
-  animation: fade-gray 4s;
-  -webkit-animation: fade-gray 4s;
-  -o-animation: fade-gray 4s;
-  -ms-animation: fade-gray 4s;
-  -moz-animation: fade-gray 4s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -moz-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -o-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -ms-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  animation: fade-gray 5s 0s stay-gray 5s 5s;
 }
 hr {
   border: none;
   background: #eeeeee 0% 0% no-repeat;
   background-attachment: fixed;
-  animation: fade-gray 4s;
-  -webkit-animation: fade-gray 4s;
-  -o-animation: fade-gray 4s;
-  -ms-animation: fade-gray 4s;
-  -moz-animation: fade-gray 4s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -moz-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -o-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  -ms-animation: fade-gray 5s 0s stay-gray 5s 5s;
+  animation: fade-gray 5s 0s stay-gray 5s 5s;
   height: 3px;
 }
 .post-content .full-img {
