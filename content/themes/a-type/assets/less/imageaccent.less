@@ -11,26 +11,15 @@
 @-o-keyframes fade-gray { .fade-gray-mixin; }
 @keyframes fade-gray { .fade-gray-mixin; }
 
-.stay-gray-mixin {
-	from { background-color: #32323f; }
-	to   { background-color: #32323f; }
-}
-
-@-webkit-keyframes stay-gray { .stay-gray-mixin; }
-@-moz-keyframes stay-gray { .stay-gray-mixin; }
-@-ms-keyframes stay-gray { .stay-gray-mixin; }
-@-o-keyframes stay-gray { .stay-gray-mixin; }
-@keyframes stay-gray { .stay-gray-mixin; }
-
 .img-accent {
 	// no background url yet... defined in JS
-	background: #eee 0% 0% no-repeat;
+	background: #32323f 0% 0% no-repeat;
 	background-attachment: fixed;
-	-webkit-animation: fade-gray 5s 0s, stay-gray 5s 5s;
-	-moz-animation: fade-gray 5s 0s, stay-gray 5s 5s;
-	-o-animation: fade-gray 5s 0s, stay-gray 5s 5s;
-	-ms-animation: fade-gray 5s 0s, stay-gray 5s 5s;
-	animation: fade-gray 5s 0s, stay-gray 5s 5s;
+	-webkit-animation: fade-gray 5s 0s;
+	-moz-animation: fade-gray 5s 0s;
+	-o-animation: fade-gray 5s 0s;
+	-ms-animation: fade-gray 5s 0s;
+	animation: fade-gray 5s 0s;
 }
 
 .img-text {
