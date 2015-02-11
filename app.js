@@ -43,7 +43,8 @@ ghost({
 				resolvedFilePath = "./content/themes/a-type" + imgUrl.pathname;
 			}
 			else {
-				resolvedFilePath = ghostServer.config.paths.contentPath + "/images" + imgUrl.pathname;
+				var relativePath = /\/content\/images(\/[a-zA-Z0-9\/.]*)/.exec(imgUrl.pathname)[1];
+				resolvedFilePath = ghostServer.config.paths.contentPath + "/images" + relativePath;
 			}
 
 			fs.readFile(resolvedFilePath, function (err, data) {
