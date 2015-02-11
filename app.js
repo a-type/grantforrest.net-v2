@@ -47,6 +47,7 @@ ghost({
 			}
 
 			fs.readFile(resolvedFilePath, function (err, data) {
+				console.log("Loading image at " + resolvedFilePath);
 				if (err) {
 					res.status(500).send("Error loading image from file " + err);
 				}
