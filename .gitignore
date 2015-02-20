@@ -6,3 +6,4 @@ css
 
 ./out.log
 ./in.log
+./err.log
