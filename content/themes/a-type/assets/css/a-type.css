@@ -37,9 +37,13 @@ p {
 }
 a {
   text-decoration: none;
+  color: #2196F3;
 }
 a:hover {
   text-decoration: none;
+}
+a:visited {
+  color: #1E88E5;
 }
 .center-text {
   text-align: center;
