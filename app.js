@@ -43,7 +43,7 @@ ghost({
 				resolvedFilePath = "./content/themes/a-type" + imgUrl.pathname;
 			}
 			else {
-				var relativePath = /\/content\/images(\/[a-zA-Z0-9\/.]*)/.exec(imgUrl.pathname)[1];
+				var relativePath = /\/content\/images(\/[a-zA-Z0-9\/._-]*)/.exec(imgUrl.pathname)[1];
 				resolvedFilePath = ghostServer.config.paths.contentPath + "/images" + relativePath;
 			}
 
