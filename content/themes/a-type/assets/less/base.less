@@ -1,20 +1,87 @@
 @foreground: white;
 
-div, p, img, h1, h2, h3, h4, h5, span, textarea,
-button, a, form, input, select, section {
+@screen-large: 1680px;
+@screen-med: 900px;
+
+* {
 	box-sizing: border-box !important;
 }
 
 body, html {
-	.fullsize;
+	.fullsize();
 	padding: 0;
 	position: relative;
 	font-family: "Helvetica Neue", Helvetica, "Segoe UI Light", "Segoe UI", Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, span, p {
+html {
+	font-size: 62.5%;
+}
+
+body {
+	max-height: 100%;
+	letter-spacing: 0.01rem;
+	font-size: 1.8rem;
+	line-height: 1.75em;
+	-webkit-font-feature-settings: "kern" 1;
+	-moz-font-feature-settings: "kern" 1;
+	-o-font-feature-settings: "kern" 1;
+	-ms-font-feature-settings: "kern" 1;
+	&::selection {
+		background: #dfe2e4;
+	}
+	color: #3a4145;
+}
+
+span, p {
 	font-family: inherit;
-	margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: inherit;
+	margin: 0 0 0.4em 0;
+	line-height: 1.15em;
+}
+
+h1 {
+	font-size: 5rem;
+	letter-spacing: -2px;
+
+	@media(max-width: @screen-med) {
+		font-size: 4.5rem;
+		text-indent: -2px;
+	}
+}
+
+h2 {
+	font-size: 3.6rem;
+	letter-spacing: -1px;
+}
+
+h3 {
+    font-size: 3rem;
+
+    @media(max-width: @screen-med) {
+    	font-size: 3.1rem;
+    }
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+    @media(max-width: @screen-med) {
+    	font-size: 2.2rem;
+    }
+}
+
+h6 {
+    font-size: 2rem;
+    @media(max-width: @screen-med) {
+    	font-size: 1.8rem;
+    }
 }
 
 a {
@@ -26,6 +93,38 @@ a {
 	&:visited {
 		color: #1E88E5;
 	}
+}
+
+p {
+	-webkit-font-feature-settings: "liga" 1, "onum" 1, "kern" 1;
+	-moz-font-feature-settings: "liga" 1, "onum" 1, "kern" 1;
+	-ms-font-feature-settings: "liga" 1, "onum" 1, "kern" 1;
+	-o-font-feature-settings: "liga" 1, "onum" 1, "kern" 1;
+}
+
+pre {
+	margin: 0 0 1.75em 0;
+	border: #A6B0B6 1px solid;
+	width: 100%;
+	padding: 10px;
+	font-family: Inconsolata, monospace, sans-serif;
+	font-size: 0.9em;
+	white-space: pre;
+	overflow: auto;
+	background: #eef3f5;
+	border-radius: 3px;
+
+	code {
+		font-size: inherit;
+		white-space: pre-wrap;
+		background: transparent;
+		border: none;
+		padding: 0;
+	}
+}
+
+footer {
+	background-color: white;
 }
 
 .center-text {
@@ -104,4 +203,20 @@ a {
 	&:hover {
 		opacity: 0.5;
 	}
+}
+
+.clearfix {
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.hidden {
+	visibility: hidden;
+	text-indent: -9999px;
+	display: none;
 }
