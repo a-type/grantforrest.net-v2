@@ -42,7 +42,7 @@
                 contentWidth = $postContent.outerWidth(), // Width of the content
                 imageWidth = this.naturalWidth; // Original image resolution
 
-            if (imageWidth >= contentWidth) {
+            if (imageWidth >= contentWidth && !$this.hasClass("author-thumb")) {
                 $this.addClass('full-img');
             } else {
                 $this.removeClass('full-img');

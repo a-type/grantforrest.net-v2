@@ -314,6 +314,9 @@ footer {
 .post-excerpt h6 {
   font-size: 1em;
 }
+.post-excerpt p {
+  display: inline;
+}
 /* Variables */
 body {
   background: #32323f 0% 0% no-repeat;
@@ -373,11 +376,6 @@ h3 {
   max-width: 100%;
   margin: 0 auto;
   padding: 0.6em 0;
-}
-.post-content .full-img {
-  width: 126%;
-  max-width: none;
-  margin: 0 -13%;
 }
 .post-footer {
   position: relative;
@@ -703,11 +701,12 @@ hr {
 }
 .full-img {
   padding: 0;
-  margin-top: 2em;
-  margin-bottom: 2em;
   -webkit-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.75);
+  width: 126%;
+  max-width: none;
+  margin: 2em -13%;
 }
 .tag-head.main-header,
 .post-head.main-header {

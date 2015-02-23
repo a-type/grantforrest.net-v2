@@ -61,12 +61,6 @@ h1, h2, h3 {
 		margin: 0 auto;
 		padding: 0.6em 0;
 	}
-
-	.full-img {
-		width: 126%;
-		max-width: none;
-		margin: 0 -13%;
-	}
 }
 
 .post-footer {
@@ -360,9 +354,10 @@ hr {
 
 .full-img {
 	padding: 0;
-	margin-top: 2em;
-	margin-bottom: 2em;
 	.shadow-mixin(@shadow-size: @low-shadow-size);
+	width: 126%;
+	max-width: none;
+	margin: 2em -13%;
 }
 
 .tag-head.main-header, .post-head.main-header {
