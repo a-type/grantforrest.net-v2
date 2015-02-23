@@ -24,8 +24,7 @@ body {
   -ms-font-feature-settings: "kern" 1;
   color: #3a4145;
 }
-body::selection,
-html::selection {
+body::selection {
   background: #dfe2e4;
 }
 span,
