@@ -1,0 +1,44 @@
+@import "base";
+@import "flair";
+
+.site-footer {
+	position: relative;
+	margin: 8rem 0 0 0;
+	padding: 0.5rem 15px;
+	.shadow-mixin(@shadow-size: @low-shadow-size);
+	line-height: 1.75em;
+	font-size: 1rem;
+}
+
+.copyright {
+	display: block;
+	width: 45%;
+	float: left;
+}
+
+.poweredby {
+	display: block;
+	width: 45%;
+	float: right;
+	text-align: right;
+}
+
+footer {
+	background-color: @bg-color;
+	border-top: none;
+}
+
+footer.post-meta {
+	font-size: 1.5rem;
+	line-height: 2.2rem;
+	display: block;
+	margin: 1.75rem 0 0 0;
+
+	.author-thumb {
+		width: 24px;
+		height: 24px;
+		float: left;
+		margin-right: 9px;
+		border-radius: 100%;
+	}
+}

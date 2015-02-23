@@ -1,0 +1,54 @@
+@import "base";
+@import "imageaccent";
+@import "flair";
+
+.main-header {
+	overflow: hidden;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background: @bg-color;
+	z-index: 99;
+	height: 100% !important;
+	.shadow-mixin(@shadow-size: @top-shadow-size);
+}
+
+.img-stripe {
+	.img-accent();
+	width: 100%;
+	height: @stripe-height;
+	bottom: 0;
+	position: absolute;
+}
+
+.page-title {
+	font-family: "Lato", sans-serif;
+	display: inline;
+	font-size: 6em;
+	line-height: 0em;
+	text-align: left;
+	white-space: nowrap;
+	.img-text();
+}
+
+.page-description {
+	font-family: "Open Sans", sans-serif;
+	display: inline;
+	white-space: nowrap;
+	font-size: 1.8rem;
+	line-height: 1.5em;
+}
+
+.main-header-content {
+	position: absolute;
+	bottom: @stripe-height;
+	height: auto;
+	max-width: none;
+	text-align: left;
+	width: 100%;
+	background-color: @bg-color;
+}
+
+.main-header {
+	background-color: @bg-color;
+}
