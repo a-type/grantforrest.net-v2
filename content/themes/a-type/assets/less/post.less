@@ -2,14 +2,17 @@
 @import "imageaccent";
 @import "flair";
 
+@post-width-large: 900px;
+@post-width-med: 768px;
+
 .post-width() {
 	width: 90%;
-
-	@media(min-width: @screen-large) {
-		max-width: @post-width-large;
-	}
+	
 	@media(min-width: @screen-med) {
 		max-width: @post-width-med;
+	}
+	@media(min-width: @screen-large) {
+		max-width: @post-width-large;
 	}
 }
 
