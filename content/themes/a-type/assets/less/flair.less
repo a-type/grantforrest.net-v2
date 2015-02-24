@@ -1,3 +1,5 @@
+@import "base";
+
 .blur(@amt) {
 	-webkit-filter: blur(@amt);
 	-moz-filter: blur(@amt);
@@ -27,5 +29,8 @@
 .floating-item {
 	background: @bg-color;
 	padding: 32px 64px;
+	@media(max-width: @screen-med) {
+		padding: 8px 32px;
+	}
 	.shadow-mixin(@shadow-size: @middle-shadow-size);
 }
