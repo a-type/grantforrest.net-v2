@@ -30,6 +30,7 @@ function measureBackgroundImage(callback) {
 }
 
 function getResizedImage() {
+	accentImagePath = accentImagePath.split("?v=")[0]; // strip off anti-caching query param. caching is fine, if not necessary!
 	measureBackgroundImage(function (size) {
 		windowSize = { x : window.outerWidth, y : window.outerHeight };
 
