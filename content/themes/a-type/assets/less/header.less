@@ -23,11 +23,17 @@
 
 .page-title {
 	font-family: "Lato", sans-serif;
-	display: inline;
+	display: inline-block;
 	font-size: 6em;
-	line-height: 0em;
+	@media(max-width: @screen-large) {
+		font-size: 4em;
+	}
+	@media(max-width: @screen-med) {
+		font-size: 2em;
+	}
+	line-height: 1em;
+	margin-bottom: 0;
 	text-align: left;
-	white-space: nowrap;
 	.img-text();
 }
 
