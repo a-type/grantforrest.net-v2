@@ -53,7 +53,7 @@ function getResizedImage() {
 			accentImagePath = blogUrl + accentImagePath;
 		}
 
-		updateAccentImage("/resize-image?width=" + finalWidth + "&height=" + finalHeight + "&src=" + encodeURIComponent(accentImagePath));
+		updateAccentImage(document.location.origin + "/resize-image?width=" + finalWidth + "&height=" + finalHeight + "&src=" + encodeURIComponent(accentImagePath));
 	});
 }
 
