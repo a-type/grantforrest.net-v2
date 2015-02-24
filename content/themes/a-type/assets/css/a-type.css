@@ -435,6 +435,8 @@ body:not(.post-template) .post-title {
 }
 blockquote {
   margin-left: 1em;
+  padding-left: 1em;
+  background: #eee;
   border: none;
   position: relative;
 }
