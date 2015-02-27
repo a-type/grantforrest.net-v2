@@ -64,8 +64,10 @@
 	@media(max-width: @screen-med) {
 		position: absolute;
 	}
-	left: 60px;
-	top: 40px;
+	@media(min-width: @screen-med) {
+		left: 60px;
+		top: 40px;
+	}
 	transition: none;
 	.nav-button();
 }
@@ -111,6 +113,8 @@
 .subscribe-button {
 	.nav-button();
 	float: right;
-	margin-right: 60px;
-	margin-top: 40px;
+	@media(min-width: @screen-med) {
+		margin-right: 60px;
+		margin-top: 40px;
+	}
 }
