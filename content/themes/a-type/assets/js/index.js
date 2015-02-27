@@ -57,24 +57,25 @@
         casperFullImg();
         $(window).smartresize(casperFullImg);
 
-        var mainHeader = $(".main-header");
-
-        mainHeader.css("top", (window.pageYOffset * -2) + "px");
-        $(window).scroll(function () {
-            // short circuit
-            if (window.pageYOffset > (window.outerHeight / 2)) {
-                return;
-            }
-            mainHeader.css("top", (window.pageYOffset * -2) + "px");
-        });
-
-        var windowHeight = $(window).height();
-        $(".content").css("padding-top", (windowHeight * 0.75) + "px");
-
-        $(window).resize(debounce(function () {
+        if (!mobileCheck()) {
+            var mainHeader = $(".main-header");
             var windowHeight = $(window).height();
+            mainHeader.css("top", (window.pageYOffset * -2) + "px");
+            $(window).scroll(function () {
+                // short circuit
+                if (window.pageYOffset > (window.outerHeight / 2)) {
+                    return;
+                }
+                mainHeader.css("top", (window.pageYOffset * -2) + "px");
+            });
+
             $(".content").css("padding-top", (windowHeight * 0.75) + "px");
-        }));
+
+            $(window).resize(debounce(function () {
+                var windowHeight = $(window).height();
+                $(".content").css("padding-top", (windowHeight * 0.75) + "px");
+            }));
+        }
     });
 
     // smartresize
