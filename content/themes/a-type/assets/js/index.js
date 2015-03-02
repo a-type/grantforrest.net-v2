@@ -57,7 +57,7 @@
         casperFullImg();
         $(window).smartresize(casperFullImg);
 
-        if (!mobileCheck()) {
+        if (!window.mobileCheck()) {
             var mainHeader = $(".main-header");
             var windowHeight = $(window).height();
             mainHeader.css("top", (window.pageYOffset * -2) + "px");
